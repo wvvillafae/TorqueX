@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="/img/camioneta.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorqueX</title>
+
+    <meta name="description" content="Find the best new and used cars and trucks at TorqueX. Flexible financing and certified guarantee.">
+
+<link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">TorqueX</a>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Open Navigation Menu">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="return false;">Full Catalog</a></li>
+                <li><a href="#" onclick="return false;">Services & Financing</a></li>
+                <li><a href="#" onclick="return false;">Contact</a></li>
+                <li><a href="#" class="btn btn-cotizar">Get a Quote Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="video-background">
+                <video 
+                    id="video-drife-fondo"
+                    src="/img/caarro.mp4" 
+                    autoplay 
+                    loop 
+                    playsinline 
+                    poster="imagen-poster.jpg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <button id="mute-toggle-btn" class="btn-mute">
+                <span class="icon-mute">&#128266;</span>
+            </button>
+            
+            <div class="hero-content">
+                <h1>Your next adventure starts at TorqueX</h1>
+                <p>Explore our premium selection of new and used cars and trucks with the best guarantee.</p>
+
+                <form id="quick-search" class="search-form">
+                    <select name="marca" aria-label="Select Vehicle Brand">
+                        <option value="">Brand</option>
+                        <option value="ford">Ford</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="mercedes">Mercedes-Benz</option> 
+                        <option value="jeep">Jeep</option>             
+                    </select>
+
+                    <select name="tipo" aria-label="Select Vehicle Type">
+                        <option value="">Type</option>
+                        <option value="camioneta">Truck/SUV</option>
+                        <option value="sedan">Sedan</option>
+                    </select>
+                    
+                    <input type="number" name="precio_max" placeholder="Max Price (e.g., 25 or 25000)" aria-label="Maximum Price">
+
+                    <button type="submit" class="btn btn-primary">Search Vehicle</button>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="featured-section">
+            <h2>🔥 Featured Vehicles This Month</h2>
+            <div class="vehicle-grid">
+
+                <article class="vehicle-card" data-marca="mercedes" data-tipo="camioneta"> 
+                    <img src="/img/R.jpeg" alt="Mercedes-Benz G63 AMG 6x6">
+                    <div class="card-details">
+                        <h3>Mercedes-Benz G63 AMG 6x6</h3>
+                        <p class="price">$45,999</p>
+                        <p class="specs">4x4 | Gasoline | 5,000 km</p>
+                        <a href="#" onclick="return false;" class="btn btn-secondary">View Details</a>
+                    </div>
+                </article>
+
+                <article class="vehicle-card" data-marca="jeep" data-tipo="camioneta">
+                    <img src="/img/R (1).jpeg" alt="Jeep Grand Cherokee SRT8">
+                    <div class="card-details">
+                        <h3>Jeep Grand Cherokee SRT8</h3>
+                        <p class="price">$23,500</p>
+                        <p class="specs">Automatic | Used | 25,000 km</p>
+                        <a href="#" onclick="return false;" class="btn btn-secondary">View Details</a>
+                    </div>
+                </article>
+
+                <article class="vehicle-card" data-marca="ford" data-tipo="camioneta"> 
+                    <img src="/img/r1.jpg" alt="Ford F-150">
+                    <div class="card-details">
+                        <h3>Ford F-150</h3>
+                        <p class="price">$52,000</p>
+                        <p class="specs">SUV | Diesel | 45,000 km</p>
+                        <a href="#" onclick="return false;" class="btn btn-secondary">View Details</a>
+                    </div>
+                </article>
+
+                <article class="vehicle-card" data-marca="chevrolet" data-tipo="camioneta">
+                    <img src="/img/r2.jpg" alt="Chevrolet Tahoe Truck">
+                    <div class="card-details">
+                        <h3>Chevrolet Silverado 1500</h3>
+                        <p class="price">$52,000</p>
+                        <p class="specs">SUV | Diesel | 45,000 km</p>
+                        <a href="#" onclick="return false;" class="btn btn-secondary">View Details</a>
+                    </div>
+                </article>
+
+                <article class="vehicle-card" data-marca="chevrolet" data-tipo="camioneta">
+                    <img src="/img/719016.jpg " alt="Chevrolet Tahoe Truck">
+                    <div class="card-details">
+                        <h3>Hennessey Goliath 6x6 Chevrolet Silverado</h3>
+                        <p class="price">$52,000</p>
+                        <p class="specs">SUV | Diesel | 45,000 km</p>
+                        <a href="#" onclick="return false;" class="btn btn-secondary">View Details</a>
+                    </div>
+                </article>
+
+                <article class="vehicle-card" data-marca="toyota" data-tipo="camioneta">
+                    <img src="/img/r3.jpg" alt="Chevrolet Tahoe Truck">
+                    <div class="card-details">
+                        <h3>Toyota Tacoma TrailRunner 2024</h3>
+                        <p class="price">$52,000</p>
+                        <p class="specs">SUV | Diesel | 45,000 km</p>
+                        <a href="#" onclick="return false;" class="btn btn-secondary">View Details</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="full-catalog-link">
+                <a href="#" onclick="return false;" class="btn btn-primary">View Full Catalog</a>
+            </div>
+
+        </section>
+
+        <section class="value-proposition">
+            <h2>Why Choose TorqueX?</h2>
+            <div class="services-list">
+                <article class="service-item">
+                    <div class="icon">🏦</div>
+                    <h3>Flexible Financing</h3>
+                    <p>Competitive rates and payment plans tailored to your budget and lifestyle.</p>
+                </article>
+
+                <article class="service-item">
+                    <div class="icon">🛡️</div>
+                    <h3>Certified Guarantee</h3>
+                    <p>Every vehicle undergoes a rigorous 150-point inspection. Buy with confidence.</p>
+                </article>
+
+                <article class="service-item">
+                    <div class="icon">🔑</div>
+                    <h3>Quick Test Drive</h3>
+                    <p>Book your test drive online and we'll have the vehicle ready for you.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-columns">
+            <div class="col-info">
+                <h4>TorqueX</h4>
+                <address>
+                    Address: Falsa Street 123, Automotive City, C.P. 10001<br>
+                    Phone: <a href="tel:+525555555555">(55) 5555-DRIVE</a><br>
+                    Email: <a href="mailto:contacto@drife.com">contact@TorqueX.com</a>
+                </address>
+            </div>
+
+            <div class="col-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" onclick="return false;">About Us</a></li>
+                    <li><a href="#" onclick="return false;">Location & Hours</a></li>
+                    <li><a href="#" onclick="return false;">Privacy Notice</a></li>
+                    <li><a href="#" onclick="return false;">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="col-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" onclick="return false;" aria-label="Follow us on Facebook">F</a>
+                    <a href="#" onclick="return false;" aria-label="Follow us on Instagram">I</a>
+                    <a href="#" onclick="return false;" aria-label="Follow us on Twitter">T</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; <time datetime="2025">2025</time> TorqueX. All rights reserved.</p>
+
+    </footer>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
