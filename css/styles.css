@@ -201,15 +201,23 @@ section {
 
 /* NUEVOS ESTILOS PARA EL CONTENEDOR DEL VIDEO */
 /* Contenedor del video - CLAVE para que el video llene el hero-section */
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero-background-image {
+    /* Asegura que la imagen ocupe todo el contenedor */
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Oculta cualquier parte del video que se desborde */
-    z-index: -1; /* Mantiene el video por debajo del contenido */
-    pointer-events: none; /* Permite que los clics pasen a los elementos debajo del video */
+    object-fit: cover; /* Recorta la imagen para cubrir el espacio sin distorsionar */
+    
+    /* Posiciona la imagen detrás del contenido y estirada */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 0; /* Mantenla en la capa de fondo */
+}
+
+/* También, asegúrate de que el contenido del formulario esté encima */
+.hero-content {
+    position: relative; /* Asegura que esté por encima de la imagen (z-index: 1 por defecto) */
+    z-index: 1;
 }
 
 /* La etiqueta <video> en sí - CLAVE para que se ajuste y se centre */
